@@ -9,8 +9,10 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <h2 className={s.title}>Projects</h2>
                 <div className={s.projects}>
-                    <Project/>
-                    <Project/>
+                    <Project projectTitle="E-commerce website"
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                    <Project projectTitle="Redux forms"
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                 </div>
             </div>
 
