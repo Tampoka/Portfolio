@@ -13,6 +13,8 @@ const Skills = () => {
                     <Skill title="JS" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="React" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="Redux" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                    <Skill title="Redux" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                    <Skill title="Redux" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                 </div>
             </div>
 
