@@ -1,0 +1,17 @@
+.mainBlock {
+    height: 100vh;
+
+    background-color: #cee8f8;
+}
+
+.intro {
+    width: 300px;
+    border: 1px solid dodgerblue;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    border: 1px solid dodgerblue;
+
+}
