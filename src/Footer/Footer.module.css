@@ -1,0 +1,32 @@
+.footer {
+    height: 30vh;
+
+    background-color: #9ad9d5;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.name {
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 300px;
+
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    background-color: #ba98da;
+}
+
+.copy {
+
+}
