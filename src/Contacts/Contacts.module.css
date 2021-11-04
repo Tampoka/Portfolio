@@ -1,0 +1,28 @@
+.contacts {
+    height: 50vh;
+
+    background-color: #d5b272;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+}
+
+.input {
+
+}
+
+.textarea {
+
+}
+
+.btn {
+
+}
