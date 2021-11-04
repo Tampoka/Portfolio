@@ -13,6 +13,8 @@ const Projects = () => {
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                     <Project projectTitle="Redux forms"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                    <Project projectTitle="Coffee shop"
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                 </div>
             </div>
 

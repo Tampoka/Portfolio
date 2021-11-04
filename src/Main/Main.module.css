@@ -1,5 +1,5 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
 
     background-color: #cee8f8;
 }
@@ -15,3 +15,4 @@
     border: 1px solid dodgerblue;
 
 }
+

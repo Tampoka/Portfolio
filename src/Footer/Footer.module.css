@@ -1,7 +1,9 @@
 .footer {
-    height: 30vh;
+    min-height: 30vh;
 
     background-color: #9ad9d5;
+
+    text-align: center;
 }
 
 .container {
@@ -16,13 +18,13 @@
     display: flex;
     justify-content: space-between;
 
-    width: 300px;
+    width: 200px;
 
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 
     background-color: #ba98da;
 }
