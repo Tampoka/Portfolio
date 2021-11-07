@@ -13,3 +13,28 @@
   max-width: 100%;
     border: 1px solid dodgerblue;
 }
+
+.imgContainer {
+position: relative;
+}
+
+.project a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    background-color: #5b8f8f;
+    text-decoration: none;
+    color: black;
+}
+
+.project a:hover{
+    cursor: pointer;
+
+    background-color: #074773;
+}
