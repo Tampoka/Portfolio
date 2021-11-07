@@ -12,17 +12,26 @@
     display: flex;
     flex-direction: column;
 
-    width: 200px;
+    width: 400px;
 }
 
 .input {
+padding: 10px;
+    margin-bottom: 10px;
 
+    text-align: center;
 }
 
 .textarea {
-
+    text-align: center;
 }
 
 .btn {
 
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 100%;
+    }
 }
