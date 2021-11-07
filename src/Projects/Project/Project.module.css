@@ -9,21 +9,21 @@
     text-align: center;
 }
 
-.image {
-  max-width: 100%;
-    border: 1px solid dodgerblue;
-}
 
 .imgContainer {
-position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:url("https://image.shutterstock.com/image-photo/istanbul-turkey-july-2021-illustrative-260nw-2019755717.jpg");
+    background-size:cover;
+    background-position: center;
+
+    width: 100%;
+    height: 200px;
 }
 
 .project a {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-
     display: block;
     padding: 5px 15px;
     border-radius: 5px;
@@ -33,7 +33,7 @@ position: relative;
     color: black;
 }
 
-.project a:hover{
+.project a:hover {
     cursor: pointer;
 
     background-color: #074773;
