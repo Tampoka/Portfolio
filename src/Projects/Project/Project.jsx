@@ -7,8 +7,8 @@ const Project = (props) => {
             <div className={s.imgContainer}>
                 <a href='#'>Show more</a>
             </div>
-            <h3>{props.projectTitle}</h3>
-            <p>{props.projectDescription}</p>
+            <div className={s.projectInfo}><h3 className={s.projectTitle}>{props.projectTitle}</h3>
+                <p className={s.description}>{props.projectDescription}</p></div>
         </div>
     );
 };
