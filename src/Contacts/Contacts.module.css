@@ -32,6 +32,11 @@
     border-radius: 5px;
 }
 
+.form input,
+.form textarea {
+    width: 100%;
+}
+
 @media screen and (max-width: 500px) {
     .form {
         width: 100%;

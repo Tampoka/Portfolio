@@ -15,7 +15,7 @@ const Contacts = () => {
                               placeholder="Questions, concerns...">
             </textarea>
                 </form>
-                <button className={s.btn}>Send</button>
+                <button type="submit" className={s.btn}>Send</button>
             </div>
         </div>
     );
