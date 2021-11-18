@@ -1,29 +1,30 @@
 .projectsBlock {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    background-color: #282727;
+  background-color: #282727;
 
-    padding: 100px 0;
-}
+  padding: 100px 0;
 
-.projectsContainer {
+  .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-}
 
-.projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    width: 100%;
-    margin-top:30px ;
-}
-
-@media screen and (max-width: 1003px) {
     .projects {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      width: 100%;
+      margin-top: 30px;
+
+      @media screen and (max-width: 1003px) {
         justify-content: center;
+      }
     }
+  }
 }
+
+
+
 
