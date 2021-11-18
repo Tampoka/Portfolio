@@ -6,17 +6,15 @@
   position: relative;
 
   &::after {
-    position: absolute;
     content: "";
-
-    background: $primaryColor;
-
-    width: 55px;
-    height: 2px;
-
-    bottom: -30px;
+    position: absolute;
+    bottom: -9 px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%);
+    width: 107px;
+    height: 10px;
+    background-image: url('../../../assets/images/title_bg_white.png');
+    opacity: 0.9;
   }
 
   h2 {
