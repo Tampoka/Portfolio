@@ -7,3 +7,23 @@
   line-height: $lineHeight;
   color: $textColor;
 }
+
+@mixin sectionTitle($fontFamily, $fontSize,$color,){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color:$color;
+
+  margin: 0 0 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -9 px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 107px;
+    height: 10px;
+    background-image: url('../../../assets/images/title_bg_white.png');
+    opacity: 0.9;
+  }
+}

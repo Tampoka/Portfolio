@@ -1,0 +1,51 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    padding: 20px 10px 30px 10px;
+    text-align: center;
+    border-radius: 6%;
+}
+
+.skillInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #625b5b;
+    border-radius: 6%;
+}
+
+.text {
+    padding: 0 15px 30px 15px;
+}
+
+.text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #7fb2b4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    background-color: #d9eee8;
+    border-radius: 6%;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+    opacity: .8;
+}
+
+.description {
+    font-size: 20px;
+}

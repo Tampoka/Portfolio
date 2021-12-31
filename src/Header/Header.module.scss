@@ -1,8 +1,10 @@
-.header {
+@import "../common/styles/saas/variables.scss";
+
+div.header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color:$bgAccentColor;
 
     min-height: 80px;
-    background-color: #f3c3b1;
 }

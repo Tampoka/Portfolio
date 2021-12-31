@@ -1,6 +1,6 @@
 import React from 'react';
-import s from './Additional.module.css'
-import styleContainer from './../common/styles/Container.module.css'
+import s from './Additional.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
 
 const Additional = () => {
     return (

@@ -27,24 +27,25 @@
     &::before {
       position: absolute;
       content: "";
-      background-color: black;
+      background-color: transparent;
       opacity: 0.5;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
+      z-index: 2;
     }
 
     &::after {
       position: absolute;
       content: "";
-      background-color: $bgSecondColor;
+      background-color: #1d2323;
 
 
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      bottom: -20px;
+      bottom: 0;
       left: 50%;
       transform: translate(-50%, 50%);
       z-index: 3;

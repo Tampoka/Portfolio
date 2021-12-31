@@ -1,0 +1,18 @@
+@import "./common/styles/saas/variables.scss";
+
+.app>div:nth-child(2n+3) {
+    background-color:$bgColor ;
+}
+
+.app>div:nth-child(even) {
+    background-color:$bgSecondColor ;
+}
+
+.app>div:nth-child(even) {
+    background-color:$bgSecondColor ;
+}
+
+.app>div:nth-child(5) {
+    background-color:$bgAccentColor ;
+}
+

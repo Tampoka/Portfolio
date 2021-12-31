@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Projects.module.scss";
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container.module.scss";
 import Project from "./Project/Project";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import socialImg from "../assets/images/social.png"
