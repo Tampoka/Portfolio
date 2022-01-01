@@ -4,7 +4,6 @@ import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./Skill/Skill";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import jsIcon from "../assets/icons/projects/icons8-js-64.png"
-import reactIcon from "../assets/icons/projects/icons8-react.svg"
 import tsIcon from "../assets/icons/projects/icons8-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-48.png"
 import reduxIcon from "../assets/icons/projects/icons8-redux-48.png"
 import sbIcon from "../assets/icons/projects/storybook.svg"
@@ -23,8 +22,8 @@ const Skills = () => {
                 <BlockTitle title="My skills"/>
                 <div className={s.skills}>
                     <Skill title="JS" icon={jsIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="React" icon={reactIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="TypeScript"  icon={tsIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                    <Skill title="React" icon={faReact} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="Redux" icon={reduxIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="StoryBook" icon={sbIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
                     <Skill title="Material UI" icon={muiIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>

@@ -1,8 +1,16 @@
+@import "../common/styles/saas/variables";
+@import "../common/styles/saas/mixins";
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 300px;
-    border: 1px solid brown;
+    width: 400px;
+}
+
+.nav a{
+    @include text($textFont,18px,bold,1);
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:$textColor
 }

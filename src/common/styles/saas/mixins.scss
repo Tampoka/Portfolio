@@ -5,20 +5,20 @@
   font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: $lineHeight;
-  color: $textColor;
+  color: $textColorDark;
+  letter-spacing: 1px;
 }
 
-@mixin sectionTitle($fontFamily, $fontSize,$color,){
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  color:$color;
-
-  margin: 0 0 30px;
+@mixin sectionTitle() {
+  font-family: $titleFont;
+  font-size: 36px;
+  color: $textColor;
   position: relative;
+  margin: 0 0 30px;
   &::after {
     content: "";
     position: absolute;
-    bottom: -9 px;
+    bottom: -13px;
     left: 50%;
     transform: translate(-50%);
     width: 107px;

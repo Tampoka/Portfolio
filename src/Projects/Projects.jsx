@@ -27,6 +27,8 @@ const Projects = () => {
                     style={todo}/>
                     <Project projectTitle="Coffee shop"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                    <Project projectTitle="Coffee shop"
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                 </div>
             </div>
 

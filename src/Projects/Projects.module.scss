@@ -2,8 +2,7 @@
 
 .projectsBlock {
   min-height: 100vh;
-
-  padding: 100px 0;
+  padding: 150px 0;
 
   .projectsContainer {
     flex-direction: column;
@@ -12,7 +11,7 @@
 
     .projects {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
 
       width: 100%;

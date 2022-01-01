@@ -5,14 +5,13 @@ import styleContainer from '../common/styles/Container.module.scss'
 const Main = () => {
     return (
         <div className={s.mainBlock}>
-            <div className={styleContainer.container}>
+                <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <div className={s.intro}>
-                    <span>Hi there</span>
+                    <span>Hi there,</span>
                     <h1>I am Robot-coder</h1>
-                    <p>Frontend developer</p>
+                    <p>Front-End developer</p>
                 </div>
                 <div className={s.photo}>
-
                 </div>
             </div>
         </div>

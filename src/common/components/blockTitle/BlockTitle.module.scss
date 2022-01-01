@@ -1,25 +1,13 @@
 @import "../../styles/saas/variables";
+@import "../../styles/saas/mixins";
 
 .title {
-  margin: 0 0 30px;
-
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -9 px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 107px;
-    height: 10px;
-    background-image: url('../../../assets/images/title_bg_white.png');
-    opacity: 0.9;
+  @include sectionTitle();
   }
 
   h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 36px;
 
     text-transform: capitalize;
@@ -30,7 +18,6 @@
 
     margin: 0;
   }
-}
 
 
 
