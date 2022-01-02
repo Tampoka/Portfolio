@@ -16,7 +16,7 @@ import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id="skills">
             <div className={s.skillsContainer}>
                 <BlockTitle title="My skills"/>
                 <div className={s.skills}>

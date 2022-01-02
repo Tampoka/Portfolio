@@ -5,7 +5,7 @@ import BlockTitle from "../common/components/blockTitle/BlockTitle";
 
 const Contacts = () => {
     return (
-        <div className={s.contacts}>
+        <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
                 <form className={s.form}>
@@ -14,7 +14,7 @@ const Contacts = () => {
                     <textarea className={s.textarea} name="" id="" cols="30" rows="10"
                               placeholder="Questions, concerns...">
             </textarea>
-                    <button type="submit" className={s.btn}>Send</button>
+                    <button type="submit" className={s.submitBtn}>Send</button>
                 </form>
             </div>
         </div>
