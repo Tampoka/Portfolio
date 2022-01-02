@@ -1,19 +1,16 @@
 @import "../common/styles/saas/variables";
+@import "../common/styles/saas/mixins";
 
 .projectsBlock {
   min-height: 100vh;
   padding: 150px 0;
 
   .projectsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    @include container();
+    @include flex(column,center,center,nowrap);
 
     .projects {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-
+      @include flex(row,space-evenly,stretch,wrap);
       width: 100%;
       margin-top: 30px;
 

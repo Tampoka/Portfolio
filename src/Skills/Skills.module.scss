@@ -1,20 +1,25 @@
+@import "../common/styles/saas/variables";
+@import "../common/styles/saas/mixins";
+
 .skillsBlock {
+  @include flex(row, center, center, nowrap);
+  min-height: 100vh;
+  padding: 150px 0;
 
-    min-height: 100vh;
-    padding: 150px 0;
+  .skillsContainer {
+    @include container();
+    @include flex(column, center, center, wrap);
+
+    .skills {
+      @include flex(row, space-evenly, stretch, wrap);
+      width: 100%;
+      margin-top: 30px;
+
+      @media screen and(max-width: 880px) {
+        justify-content: center;
+      }
+    }
+  }
 }
 
-.skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-}
 
-.skills {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    width: 100%;
-    margin-top: 30px;
-}

@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./Skill/Skill";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import jsIcon from "../assets/icons/projects/icons8-js-64.png"
@@ -18,7 +17,7 @@ import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
 const Skills = () => {
     return (
         <div className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+            <div className={s.skillsContainer}>
                 <BlockTitle title="My skills"/>
                 <div className={s.skills}>
                     <Skill title="JS" icon={jsIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>

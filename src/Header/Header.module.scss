@@ -1,11 +1,14 @@
 @import "../common/styles/saas/variables.scss";
 
 div.header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color:$bgAccentColor;
-
-    min-height: 80px;
-    padding-right: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $bgAccentColor;
+  min-height: 80px;
+  padding-right: 50px;
 }

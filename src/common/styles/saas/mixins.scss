@@ -6,7 +6,6 @@
   font-weight: $fontWeight;
   line-height: $lineHeight;
   color: $textColorDark;
-  letter-spacing: 1px;
 }
 
 @mixin sectionTitle() {
@@ -26,4 +25,26 @@
     background-image: url('../../../assets/images/title_bg_white.png');
     opacity: 0.9;
   }
+}
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and(max-width: 602px) {
+    width: 95%;
+  }
+}
+
+@mixin flex($direction,$justifyContent,$alignItems,$wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}
+
+@mixin bgImgSettings() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

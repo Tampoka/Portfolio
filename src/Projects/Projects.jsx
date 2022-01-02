@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Projects.module.scss";
-import styleContainer from "../common/styles/Container.module.scss";
 import Project from "./Project/Project";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import socialImg from "../assets/images/social.png"
@@ -12,11 +11,11 @@ const Projects = () => {
     }
 
     const todo = {
-        backgroundImage:  `url(${todoImg})`
+        backgroundImage: `url(${todoImg})`
     }
     return (
         <div className={s.projectsBlock}>
-            <div className={`${styleContainer.container} ${s.projectsContainer}`}>
+            <div className={s.projectsContainer}>
                 <BlockTitle title="Projects"/>
                 <div className={s.projects}>
                     <Project projectTitle="Social network"
@@ -24,7 +23,9 @@ const Projects = () => {
                              style={social}/>
                     <Project projectTitle="Todo list"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                    style={todo}/>
+                             style={todo}/>
+                    <Project projectTitle="Coffee shop"
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                     <Project projectTitle="Coffee shop"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                     <Project projectTitle="Coffee shop"

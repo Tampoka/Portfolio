@@ -2,25 +2,20 @@
 @import "../../common/styles/saas/mixins";
 
 .project {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  max-width: 33%;
-  margin-bottom: 10px;
-  padding: 10px;
-
-  background-color: #1d2323;
+  @include flex(column, flex-start, flex-start, nowrap);
+  width: 350px;
+  //max-width: 33%;
+  //margin-bottom: 10px;
+  padding: 5px;
+  background-color: $bgSecondColor;
 
   .imgContainer {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include flex(column, center, center, nowrap);
+    @include bgImgSettings();
     background-size: cover;
     background-position: center;
-
+    filter: grayscale(50%) opacity(0.5);
     width: 100%;
     height: 300px;
 
@@ -39,18 +34,15 @@
     .btn {
       position: relative;
       z-index: 2;
-
       display: block;
       padding: 15px 25px;
       border-radius: 6px;
-
-      background-color: $primaryColor;
+      background-color: $bgAccentColor;
       text-decoration: none;
       color: $textColor;
 
       &:hover {
         cursor: pointer;
-
         background-color: $bgColor;
       }
     }
@@ -62,22 +54,17 @@
     box-shadow: 0 0 17 0 rgb(255 255 255 / 10%);
 
     .projectTitle {
-      @include text($titleFont, 18px, 700, 1.2);
+      @include text($titleFont, 24px, 700, 1.2);
       margin: 0 0 5px;
     }
 
     .description {
-      @include text($textFont, 12px, 400, 1.8);
-      letter-spacing: 2px;
+      @include text($textFont, 16px, 400, 1.8);
     }
   }
 
-  &:nth-child(odd) {
-    margin-right: 10px;
-
-    @media screen and (max-width: 1015px) {
-      margin-right: 0;
-    }
+  @media screen and (max-width: 1015px) {
+    justify-content: center;
   }
 
 

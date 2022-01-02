@@ -7,9 +7,8 @@ const Skill = ({title, description, icon}) => {
     return (
         <div className={s.skill}>
             <div className={s.skillInner}>
-
                 <div className={s.icon}>
-                    {icon !==faReact
+                    {icon !== faReact
                         ? <img src={icon} alt="icon"/>
                         : <FontAwesomeIcon icon={icon} spin/>}
                 </div>
