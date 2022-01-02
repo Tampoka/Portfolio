@@ -1,13 +1,12 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import styleContainer from '../common/styles/Container.module.scss'
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 
 
 const Contacts = () => {
     return (
         <div className={s.contacts}>
-            <div className={`${styleContainer.container} ${s.container}`}>
+            <div className={s.container}>
                 <BlockTitle title="Contacts"/>
                 <form className={s.form}>
                     <input className={s.input} type="text" placeholder="Your Name"/>
@@ -15,8 +14,8 @@ const Contacts = () => {
                     <textarea className={s.textarea} name="" id="" cols="30" rows="10"
                               placeholder="Questions, concerns...">
             </textarea>
+                    <button type="submit" className={s.btn}>Send</button>
                 </form>
-                <button type="submit" className={s.btn}>Send</button>
             </div>
         </div>
     );
