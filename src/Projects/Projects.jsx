@@ -20,7 +20,7 @@ const Projects = () => {
                 <div className={s.projects}>
                     <Project projectTitle="Social network"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                             style={social}/>
+                             style={social} linkTo="https://github.com/Tampoka/my_social_network"/>
                     <Project projectTitle="Todo list"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              style={todo}/>

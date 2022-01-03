@@ -14,6 +14,7 @@
     .form {
       @include flex(column, center, center, nowrap);
       width: 450px;
+      margin-top: 30px;
 
       @media screen and (max-width: 602px) {
         width: 100%;
@@ -52,6 +53,7 @@
       }
       .submitBtn {
       @extend .btn;
+        padding: 15px 25px;
       }
     }
   }

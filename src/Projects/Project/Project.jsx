@@ -5,7 +5,7 @@ const Project = (props) => {
     return (
         <div className={s.project}>
             <div className={s.imgContainer} style={props.style}>
-                <a href='#' className={s.btn}>Show more</a>
+                <a href={props.linkTo} className={s.showBtn} target="_blank" rel="noreferrer noopener">Show more</a>
             </div>
             <div className={s.projectInfo}>
                 <h3 className={s.projectTitle}>{props.projectTitle}</h3>

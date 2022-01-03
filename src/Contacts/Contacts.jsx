@@ -14,7 +14,7 @@ const Contacts = () => {
                     <textarea className={s.textarea} name="" id="" cols="30" rows="10"
                               placeholder="Questions, concerns...">
             </textarea>
-                    <button type="submit" className={s.submitBtn}>Send</button>
+                    <button type="submit" className={s.submitBtn}>Send message</button>
                 </form>
             </div>
         </div>
