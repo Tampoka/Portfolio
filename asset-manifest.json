@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ab9cbe2.chunk.css",
-    "main.js": "/portfolio/static/js/main.6a79ccf2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6a79ccf2.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.c40de6b9.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c40de6b9.js.map",
-    "static/js/2.7a844ec3.chunk.js": "/portfolio/static/js/2.7a844ec3.chunk.js",
-    "static/js/2.7a844ec3.chunk.js.map": "/portfolio/static/js/2.7a844ec3.chunk.js.map",
-    "static/js/3.fba32cc4.chunk.js": "/portfolio/static/js/3.fba32cc4.chunk.js",
-    "static/js/3.fba32cc4.chunk.js.map": "/portfolio/static/js/3.fba32cc4.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0167122c.chunk.css",
+    "main.js": "/portfolio/static/js/main.2f1b791f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2f1b791f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.2206578c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2206578c.js.map",
+    "static/js/2.fc20e08d.chunk.js": "/portfolio/static/js/2.fc20e08d.chunk.js",
+    "static/js/2.fc20e08d.chunk.js.map": "/portfolio/static/js/2.fc20e08d.chunk.js.map",
+    "static/js/3.a58aba43.chunk.js": "/portfolio/static/js/3.a58aba43.chunk.js",
+    "static/js/3.a58aba43.chunk.js.map": "/portfolio/static/js/3.a58aba43.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.4ab9cbe2.chunk.css.map": "/portfolio/static/css/main.4ab9cbe2.chunk.css.map",
-    "static/js/2.7a844ec3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7a844ec3.chunk.js.LICENSE.txt",
+    "static/css/main.0167122c.chunk.css.map": "/portfolio/static/css/main.0167122c.chunk.css.map",
+    "static/js/2.fc20e08d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fc20e08d.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/portfolio/static/media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.82aef47d.jpg",
     "static/media/restApi.7bbb3a4b.svg": "/portfolio/static/media/restApi.7bbb3a4b.svg",
     "static/media/social.de3d5631.png": "/portfolio/static/media/social.de3d5631.png",
@@ -19,9 +19,9 @@
     "static/media/todo.a6a56af1.png": "/portfolio/static/media/todo.a6a56af1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c40de6b9.js",
-    "static/js/2.7a844ec3.chunk.js",
-    "static/css/main.4ab9cbe2.chunk.css",
-    "static/js/main.6a79ccf2.chunk.js"
+    "static/js/runtime-main.2206578c.js",
+    "static/js/2.fc20e08d.chunk.js",
+    "static/css/main.0167122c.chunk.css",
+    "static/js/main.2f1b791f.chunk.js"
   ]
 }
