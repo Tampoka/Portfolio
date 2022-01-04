@@ -67,6 +67,17 @@
         }
       }
 
+      .message {
+        color: #2fb928;
+        font-size: 24px;
+        margin-top: 15px;
+      }
+
+      .msgError {
+        color: #ea4b4b;
+        font-size: 24px;
+        margin-top: 15px;
+      }
     }
   }
 }

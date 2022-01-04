@@ -1,8 +1,11 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import s from './Contacts.module.scss'
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
+import {init} from '@emailjs/browser';
+
+init("user_rqmTsb2vCqUC06uaLWlbW");
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
@@ -28,6 +31,7 @@ const validate = values => {
 };
 
 const Contacts = () => {
+    const [message, setMessage] = useState('')
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -38,27 +42,32 @@ const Contacts = () => {
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2))
             formik.resetForm()
-            sendEmail()
         }
     })
 
-    const form=useRef()
+    const form = useRef()
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
             .then((result) => {
                 console.log(result.text);
+                setMessage('Your message was sent successfully!')
             }, (error) => {
+                setMessage('Some error occurred. Your message was not sent.')
                 console.log(error.text);
             });
     };
+    const messageClass = message==='Some error occurred. Your message was not sent.'?s.msgError:s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
-                <form className={s.form} onSubmit={formik.handleSubmit} ref={form}>
+                <form className={s.form} onSubmit={(e) => {
+                    formik.handleSubmit();
+                    sendEmail(e)
+                }} ref={form}>
                     <input className={s.input}
                            type="text"
                            name="name"
@@ -87,6 +96,7 @@ const Contacts = () => {
                         ? (<span className={s.error}>{formik.errors.message}</span>)
                         : null}
                     <button type="submit" className={s.submitBtn} disabled={!formik.isValid}>Send message</button>
+                    <div className={messageClass}>{message}</div>
                 </form>
             </div>
         </div>
