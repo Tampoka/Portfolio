@@ -36,6 +36,7 @@ const Contacts = () => {
         validate,
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2))
+            formik.resetForm()
         }
     })
     return (
@@ -68,9 +69,9 @@ const Contacts = () => {
                               placeholder="Questions, concerns...">
             </textarea>
                     {formik.touched.message && formik.errors.message
-                        ? (<div className={s.error}>{formik.errors.message}</div>)
+                        ? (<span className={s.error}>{formik.errors.message}</span>)
                         : null}
-                    <button type="submit" className={s.submitBtn}>Send message</button>
+                    <button type="submit" className={s.submitBtn} disabled={!formik.isValid}>Send message</button>
                 </form>
             </div>
         </div>
