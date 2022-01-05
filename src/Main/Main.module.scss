@@ -9,6 +9,15 @@
   background-color: white;
   @include flex(row, center, center, nowrap);
 
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+
   .container {
     @include container();
     @include flex(row, center, center, wrap);
@@ -51,8 +60,13 @@
       }
     }
   }
-
-
 }
 
-
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}

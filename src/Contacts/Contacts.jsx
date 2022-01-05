@@ -11,11 +11,6 @@ init("user_rqmTsb2vCqUC06uaLWlbW");
 // which keys are symmetrical to our values/initialValues
 const validate = values => {
     const errors = {};
-    // if (!values.name) {
-    //     errors.firstName = 'Required';
-    // } else if (values.firstName.length > 15) {
-    //     errors.firstName = 'Must be 15 characters or less';
-    // }
 
     if (!values.email) {
         errors.email = 'Required';
@@ -59,7 +54,7 @@ const Contacts = () => {
                 console.log(error.text);
             });
     };
-    const messageClass = message==='Some error occurred. Your message was not sent.'?s.msgError:s.message
+    const messageClass = message === 'Some error occurred. Your message was not sent.' ? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
