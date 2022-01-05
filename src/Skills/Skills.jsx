@@ -11,26 +11,37 @@ import tddIcon from "../assets/icons/projects/icons8-product-64.png"
 import apiIcon from "../assets/icons/projects/restApi.svg"
 import gitHubIcon from "../assets/icons/projects/icons8-github-48.png"
 import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
-
+import Fade from "react-reveal/Fade";
 
 
 const Skills = () => {
     return (
         <div className={s.skillsBlock} id="skills">
-            <div className={s.skillsContainer}>
-                <BlockTitle title="My skills"/>
-                <div className={s.skills}>
-                    <Skill title="JS" icon={jsIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="TypeScript"  icon={tsIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="React" icon={faReact} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="Redux" icon={reduxIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="StoryBook" icon={sbIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="Material UI" icon={muiIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="Unit Testing & TDD" icon={tddIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="Rest API & Axios" icon={apiIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
-                    <Skill title="GitHub" icon={gitHubIcon} description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+            <Fade left >
+                <div className={s.skillsContainer}>
+                    <BlockTitle title="My skills"/>
+                    <div className={s.skills}>
+                        <Skill title="JS" icon={jsIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="TypeScript" icon={tsIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="React" icon={faReact}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="Redux" icon={reduxIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="StoryBook" icon={sbIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="Material UI" icon={muiIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="Unit Testing & TDD" icon={tddIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="Rest API & Axios" icon={apiIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                        <Skill title="GitHub" icon={gitHubIcon}
+                               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nulla."/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
 
         </div>
     );

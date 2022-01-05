@@ -41,7 +41,7 @@ export const particlesOpt = {
                 "type": "circle"
             },
             "onHover": {
-                "enable": false,
+                "enable": true,
                 "mode": [],
                 "parallax": {
                     "enable": true,
