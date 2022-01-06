@@ -14,12 +14,12 @@
     color: $textColor;
     padding: 5px 10px;
 
-    &.active {
+    &:hover {
       border: 2px solid $textColor;
     }
 
-    &:hover {
-      border: 2px solid $textColor;
+    &.active {
+      color: $bgAccentColor;
     }
   }
 }
