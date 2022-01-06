@@ -45,8 +45,8 @@ export const particlesOpt = {
                 "mode": [],
                 "parallax": {
                     "enable": true,
-                    "force": 40,
-                    "smooth": 50
+                    "force": 30,
+                    "smooth": 30
                 }
             },
             "resize": true

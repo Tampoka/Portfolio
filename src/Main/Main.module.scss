@@ -41,10 +41,6 @@
         font-size: 80px;
       }
 
-      p {
-        text-transform: uppercase;
-      }
-
       &::before {
         content: "";
         position: absolute;
@@ -57,6 +53,10 @@
         background-image: url('../assets/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg');
         background-position: center;
         background-size: cover;
+      }
+      :nth-child(3){
+          text-transform: uppercase;
+        color: $textColor;
       }
     }
   }

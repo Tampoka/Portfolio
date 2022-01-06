@@ -3,7 +3,8 @@ import s from './Skills.module.scss'
 import Skill from "./Skill/Skill";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import jsIcon from "../assets/icons/projects/icons8-js-64.png"
-import tsIcon from "../assets/icons/projects/icons8-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-48.png"
+import tsIcon
+    from "../assets/icons/projects/icons8-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-48.png"
 import reduxIcon from "../assets/icons/projects/icons8-redux-48.png"
 import sbIcon from "../assets/icons/projects/storybook.svg"
 import muiIcon from "../assets/icons/projects/icons8-material-ui-48.png"
@@ -17,7 +18,7 @@ import Fade from "react-reveal/Fade";
 const Skills = () => {
     return (
         <div className={s.skillsBlock} id="skills">
-            <Fade left >
+            <Fade left>
                 <div className={s.skillsContainer}>
                     <BlockTitle title="My skills"/>
                     <div className={s.skills}>

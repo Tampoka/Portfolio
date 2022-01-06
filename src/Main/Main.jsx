@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Main.module.scss'
 import Particles from "react-tsparticles";
 import {particlesOpt} from "../common/components/Particles/particlesOpt";
+import ReactTypingEffect from 'react-typing-effect';
 
 const Main = () => {
 
@@ -12,7 +13,11 @@ const Main = () => {
                 <div className={s.intro}>
                     <span>Hi there,</span>
                     <h1>I am Robot-coder</h1>
-                    <p>Front-End developer</p>
+                    <ReactTypingEffect text={"<Front-End developer  >"}
+                                       speed={300}
+                                       eraseDelay={100}
+                                       typingDelay={500}
+                                       cursor={"💻"}/>
                 </div>
             </div>
         </div>

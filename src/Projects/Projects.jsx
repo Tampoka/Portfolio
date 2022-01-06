@@ -24,11 +24,11 @@ const Projects = () => {
                     <Project projectTitle="Todo list"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              style={todo}/>
-                    <Project projectTitle="Coffee shop"
+                    <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
-                    <Project projectTitle="Coffee shop"
+                    <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
-                    <Project projectTitle="Coffee shop"
+                    <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
                 </div>
             </div>
