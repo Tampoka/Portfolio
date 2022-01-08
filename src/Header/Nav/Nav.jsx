@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Nav.module.scss';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 
 const Nav = () => {
     return (
@@ -22,7 +22,8 @@ const Nav = () => {
             <Link to="contacts" activeClass={s.active}
                   spy={true}
                   smooth={true}
-                  duration={600}>Contacts</Link>
+                  duration={600}
+            offset={1}>Contacts</Link>
         </div>
     );
 };
