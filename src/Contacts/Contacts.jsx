@@ -43,14 +43,11 @@ const Contacts = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
             .then((result) => {
-                console.log(result.text);
                 setMessage('Your message was sent successfully!')
             }, (error) => {
                 setMessage('Some error occurred. Your message was not sent.')
-                console.log(error.text);
             });
     };
     const messageClass = message === 'Some error occurred. Your message was not sent.' ? s.msgError : s.message
