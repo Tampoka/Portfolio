@@ -23,6 +23,7 @@
     "react-scroll": "^1.8.4",
     "react-tsparticles": "^1.38.0",
     "react-typing-effect": "^2.0.5",
+    "rodal": "^1.8.1",
     "saas": "^1.0.0",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",

@@ -20,16 +20,21 @@ const Projects = () => {
                 <div className={s.projects}>
                     <Project projectTitle="Social network"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                             style={social} linkTo="https://github.com/Tampoka/my_social_network"/>
+                             style={social} linkTo="https://tampoka.github.io/my_social_network/"
+                             codeLink="https://github.com/Tampoka/my_social_network"/>
                     <Project projectTitle="Todo list"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                             style={todo}/>
+                             style={todo} linkTo="https://tampoka.github.io/Todo/"
+                             codeLink="https://github.com/Tampoka/Todo"/>
                     <Project projectTitle="Coming soon"
-                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
+                             codeLink=""/>
                     <Project projectTitle="Coming soon"
-                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
+                             codeLink=""/>
                     <Project projectTitle="Coming soon"
-                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."/>
+                             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
+                             codeLink=""/>
                 </div>
             </div>
 
