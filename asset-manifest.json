@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bda7666d.chunk.css",
+    "main.css": "/portfolio/static/css/main.7eda8a5a.chunk.css",
     "main.js": "/portfolio/static/js/main.7222fbec.chunk.js",
     "main.js.map": "/portfolio/static/js/main.7222fbec.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8321c252.js",
@@ -10,7 +10,7 @@
     "static/js/3.ece72aa1.chunk.js": "/portfolio/static/js/3.ece72aa1.chunk.js",
     "static/js/3.ece72aa1.chunk.js.map": "/portfolio/static/js/3.ece72aa1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.bda7666d.chunk.css.map": "/portfolio/static/css/main.bda7666d.chunk.css.map",
+    "static/css/main.7eda8a5a.chunk.css.map": "/portfolio/static/css/main.7eda8a5a.chunk.css.map",
     "static/js/2.c039a3cb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c039a3cb.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/portfolio/static/media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.82aef47d.jpg",
     "static/media/restApi.7bbb3a4b.svg": "/portfolio/static/media/restApi.7bbb3a4b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.8321c252.js",
     "static/js/2.c039a3cb.chunk.js",
-    "static/css/main.bda7666d.chunk.css",
+    "static/css/main.7eda8a5a.chunk.css",
     "static/js/main.7222fbec.chunk.js"
   ]
 }
