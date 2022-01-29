@@ -4,6 +4,7 @@ import Project from "./Project/Project";
 import BlockTitle from "../common/components/blockTitle/BlockTitle";
 import socialImg from "../assets/images/social.png"
 import todoImg from "../assets/images/todo.png"
+import cardsImg from "../assets/images/cards.png"
 
 const Projects = () => {
     const social = {
@@ -12,6 +13,10 @@ const Projects = () => {
 
     const todo = {
         backgroundImage: `url(${todoImg})`
+    }
+
+    const cards={
+        backgroundImage:`url(${cardsImg})`
     }
     return (
         <div className={s.projectsBlock} id="projects">
@@ -26,9 +31,10 @@ const Projects = () => {
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              style={todo} linkTo="https://tampoka.github.io/Todo/"
                              codeLink="https://github.com/Tampoka/Todo"/>
-                    <Project projectTitle="Coming soon"
+                    <Project projectTitle="learning cards"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                             codeLink=""/>
+                             style={cards} linkTo='https://tampoka.github.io/react-cards/#/profile'
+                             codeLink='https://github.com/Tampoka/react-cards'/>
                     <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              codeLink=""/>
