@@ -4,7 +4,7 @@ import Project from './Project/Project';
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
 import socialImg from '../assets/images/social.png'
 import todoImg from '../assets/images/todo.png'
-import cardsImg from '../assets/images/cards.png'
+import cardsImg from '../assets/images/learning_cards.png'
 
 const Projects = () => {
     const social = {
@@ -23,11 +23,6 @@ const Projects = () => {
             <div className={s.projectsContainer}>
                 <BlockTitle title="Projects"/>
                 <div className={s.projects}>
-                    <Project projectTitle="Social network"
-                             projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."
-                             style={social} linkTo="https://tampoka.github.io/my_social_network/"
-                             stack="React, Redux, redux-form, axios, Ant Design."
-                             codeLink="https://github.com/Tampoka/my_social_network"/>
                     <Project projectTitle="Todo list"
                              projectDescription="Classic todo application with auth flow implemented. Features adding, updating, sorting todos."
                              style={todo} linkTo="https://tampoka.github.io/Todo/"
@@ -38,6 +33,11 @@ const Projects = () => {
                              style={cards} linkTo='https://tampoka.github.io/react-cards/#/profile'
                              stack="React, Redux, formik, axios, scss."
                              codeLink='https://github.com/Tampoka/react-cards'/>
+                    <Project projectTitle="Social network"
+                             projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."
+                             style={social} linkTo="https://tampoka.github.io/my_social_network/"
+                             stack="React, Redux, redux-form, axios, Ant Design."
+                             codeLink="https://github.com/Tampoka/my_social_network"/>
                     <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              codeLink=""/>

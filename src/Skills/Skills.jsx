@@ -29,17 +29,17 @@ const Skills = () => {
                         <Skill title="React" icon={faReact}
                                description="JavaScript library for building user interfaces / interactive UIs."/>
                         <Skill title="Redux" icon={reduxIcon}
-                               description="an open-source JS library for managing and centralizing application state."/>
+                               description="open-source JS library for managing and centralizing application state."/>
                         <Skill title="StoryBook" icon={sbIcon}
                                description="tool for building UI components and pages in isolation."/>
                         <Skill title="Material UI" icon={muiIcon}
                                description="library of UI components, enabling to build your own design system"/>
                         <Skill title="Unit Testing & TDD" icon={tddIcon}
-                               description="is an approach to SD when unit tests are written before the business logic."/>
+                               description="approach to SD when unit tests are written before the business logic."/>
                         <Skill title="Rest API & Axios" icon={apiIcon}
                                description="promise-based HTTP Client JS library to make CRUD requests to Rest API. "/>
                         <Skill title="GitHub" icon={gitHubIcon}
-                               description=" a code hosting platform for version control and collaboration."/>
+                               description="code hosting platform for version control and collaboration."/>
                     </div>
                 </div>
             </Fade>
