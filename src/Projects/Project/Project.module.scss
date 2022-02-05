@@ -1,10 +1,10 @@
-@import "../../common/styles/saas/variables";
-@import "../../common/styles/saas/mixins";
-@import "../../common/components/button/Button.module";
+@import '../../common/styles/saas/variables';
+@import '../../common/styles/saas/mixins';
+@import '../../common/components/button/Button.module';
 
 .project {
   @include flex(column, flex-start, flex-start, nowrap);
-  width: 350px;
+  width: 450px;
   background-color: $bgSecondColor;
   padding: 10px;
 
@@ -17,6 +17,8 @@
     filter: sepia(700%) saturate(0.8) blur(0.8);
     width: 100%;
     height: 300px;
+    //border: 6px inset rgba(213, 208, 208, 0.91);
+
 
     &::before {
       position: absolute;
@@ -28,6 +30,7 @@
       left: 0;
       right: 0;
       z-index: 2;
+
     }
 
     .showBtn {
@@ -38,9 +41,14 @@
   }
 
   .projectInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 25px 20px;
     background-color: rgba(8, 8, 8, 0.5);
     box-shadow: 0 0 17 0 rgb(255 255 255 / 10%);
+    min-height: 280px;
+
 
     .projectTitle {
       @include text($titleFont, 24px, 700, 1.2);
@@ -51,10 +59,16 @@
       @include text($textFont, 16px, 400, 1.8);
     }
 
+    .stack {
+      @include text($textFont, 18px, 400, 1.8);
+      color: #dcd9d9;
+      margin-top: 10px;
+    }
+
     .code {
       @include text($textFont, 16px, 400, 1.8);
       text-transform: uppercase;
-      text-align: right;
+      align-self: flex-end;
 
       a {
         text-decoration: none;

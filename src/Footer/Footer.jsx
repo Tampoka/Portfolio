@@ -1,17 +1,17 @@
 import React from 'react';
 import s from './Footer.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTwitter} from "@fortawesome/free-brands-svg-icons/faTwitter";
-import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import Rotate from "react-reveal/Rotate";
+import {faTwitter} from '@fortawesome/free-brands-svg-icons/faTwitter';
+import {faTelegram} from '@fortawesome/free-brands-svg-icons/faTelegram';
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import Rotate from 'react-reveal/Rotate';
 
 const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={s.container}>
                 <h2 className={s.name}> Robot-coder</h2>
-                <Rotate top left>{/*<img  className={s.icon} src="" alt=""/>*/}
+                <Rotate top left>
                     <div className={s.icons}>
                         <span className={s.icon}>
                         <a href="https://twitter.com/flusk20" target="_blank" rel="noreferrer noopener">

@@ -1,6 +1,6 @@
-@import "../common/styles/saas/variables";
-@import "../common/styles/saas/mixins";
-@import "../common/components/button/Button.module";
+@import '../common/styles/saas/variables';
+@import '../common/styles/saas/mixins';
+@import '../common/components/button/Button.module';
 
 .contacts {
   @include flex(row, center, center, nowrap);

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./BlockTitle.module.scss";
+import s from './BlockTitle.module.scss';
 
 const BlockTitle = (props) => {
     return (

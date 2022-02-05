@@ -1,5 +1,5 @@
-@import "../common/styles/saas/variables";
-@import "../common/styles/saas/mixins";
+@import '../common/styles/saas/variables';
+@import '../common/styles/saas/mixins';
 
 .footer {
   @include flex(row, center, center, nowrap);

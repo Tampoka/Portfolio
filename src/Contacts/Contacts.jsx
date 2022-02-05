@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import s from './Contacts.module.scss'
-import BlockTitle from "../common/components/blockTitle/BlockTitle";
-import {useFormik} from "formik";
+import BlockTitle from '../common/components/blockTitle/BlockTitle';
+import {useFormik} from 'formik';
 import emailjs from '@emailjs/browser';
 import {init} from '@emailjs/browser';
 

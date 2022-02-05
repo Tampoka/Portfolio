@@ -10,6 +10,7 @@ const Project = (props) => {
             <div className={s.projectInfo}>
                 <h3 className={s.projectTitle}>{props.projectTitle}</h3>
                 <p className={s.description}>{props.projectDescription}</p>
+                <p className={s.stack}>{props.stack}</p>
                 <p className={s.code}><a href={props.codeLink} title="Project repository">Code</a></p>
             </div>
         </div>

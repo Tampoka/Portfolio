@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Hire.module.scss'
-import Button from "../common/components/button/Button";
+import Button from '../common/components/button/Button';
 
 const Hire = () => {
     return (
