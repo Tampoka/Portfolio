@@ -2,15 +2,14 @@ import React from 'react';
 import s from './Skills.module.scss'
 import Skill from './Skill/Skill';
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
-import jsIcon from '../assets/icons/projects/icons8-js-64.png'
-import tsIcon
-    from '../assets/icons/projects/icons8-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-48.png'
-import reduxIcon from '../assets/icons/projects/icons8-redux-48.png'
+import jsIcon from '../assets/icons/projects/js.png'
+import tsIcon from '../assets/icons/projects/ts.png'
+import reduxIcon from '../assets/icons/projects/redux.png'
 import sbIcon from '../assets/icons/projects/storybook.svg'
-import muiIcon from '../assets/icons/projects/icons8-material-ui-48.png'
-import tddIcon from '../assets/icons/projects/icons8-product-64.png'
+import muiIcon from '../assets/icons/projects/material_ui.png'
+import tddIcon from '../assets/icons/projects/product.png'
 import apiIcon from '../assets/icons/projects/restApi.svg'
-import gitHubIcon from '../assets/icons/projects/icons8-github-48.png'
+import gitHubIcon from '../assets/icons/projects/github.png'
 import {faReact} from '@fortawesome/free-brands-svg-icons/faReact';
 import Fade from 'react-reveal/Fade';
 
