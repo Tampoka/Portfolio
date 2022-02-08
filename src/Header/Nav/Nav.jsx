@@ -1,20 +1,20 @@
-import React from 'react';
+import {useState} from 'react';
 import s from './Nav.module.scss';
 import {Link} from 'react-scroll';
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const Nav = () => {
-    const [showMenu, setShowMenu]=useState(false)
-    const toggleMenu=setShowMenu(!showMenu)
+    const [showMenu, setShowMenu] = useState(false);
+    const toggleMenu = () =>  setShowMenu(!showMenu);
 
     return (
         <div className={s.nav}>
             <div className={s.menuItems}><Link to="main"
-                     activeClass={s.active}
-                     spy={true}
-                     smooth={true}
-                     duration={600}>
+                                               activeClass={s.active}
+                                               spy={true}
+                                               smooth={true}
+                                               duration={600}>
                 Main</Link>
                 <Link to="projects" activeClass={s.active}
                       spy={true}

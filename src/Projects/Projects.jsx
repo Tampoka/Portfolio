@@ -33,11 +33,11 @@ const Projects = () => {
                              style={cards} linkTo='https://tampoka.github.io/react-cards/#/profile'
                              stack="React, Redux, formik, axios, scss."
                              codeLink='https://github.com/Tampoka/react-cards'/>
-                    <Project projectTitle="Social network"
-                             projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."
-                             style={social} linkTo="https://tampoka.github.io/my_social_network/"
-                             stack="React, Redux, redux-form, axios, Ant Design."
-                             codeLink="https://github.com/Tampoka/my_social_network"/>
+                    {/*<Project projectTitle="Social network"*/}
+                    {/*         projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."*/}
+                    {/*         style={social} linkTo="https://tampoka.github.io/my_social_network/"*/}
+                    {/*         stack="React, Redux, redux-form, axios, Ant Design."*/}
+                    {/*         codeLink="https://github.com/Tampoka/my_social_network"/>*/}
                     <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
                              codeLink=""/>

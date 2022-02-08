@@ -12,7 +12,7 @@ const Main = () => {
             <div className={s.container}>
                 <div className={s.intro}>
                     <span>Hi there,</span>
-                    <h1>I am Robot-coder</h1>
+                    <h1>I am Tampoka</h1>
                     <ReactTypingEffect text={"<Front-End developer  >"}
                                        speed={300}
                                        eraseDelay={100}
