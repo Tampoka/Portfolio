@@ -7,17 +7,16 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 const Nav = () => {
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
-    const menuItemsClassName=s.menuItems +" "+(showMenu?s.visible:"")
-    console.log(showMenu)
+    const menuItemsClassName = s.menuItems + " " + (showMenu ? s.visible : "")
 
     return (
         <>
             <div className={s.nav}>
                 <div className={menuItemsClassName}><Link to="main"
-                                                   activeClass={s.active}
-                                                   spy={true}
-                                                   smooth={true}
-                                                   duration={600}>
+                                                          activeClass={s.active}
+                                                          spy={true}
+                                                          smooth={true}
+                                                          duration={600}>
                     Main</Link>
                     <Link to="projects" activeClass={s.active}
                           spy={true}
