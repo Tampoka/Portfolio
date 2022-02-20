@@ -29,7 +29,12 @@
       }
     }
 
+    &.visible {
+      display: flex;
+    }
+
     @media screen and (max-width: 660px) {
+      display: none;
       position: absolute;
       top: 20px;
       left: 20px;
@@ -38,22 +43,26 @@
       a {
         padding-bottom: 15px;
       }
+
     }
+
   }
 
-  .burgerMenu {
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    font-size: 50px;
-    @include flex(row, center, center, nowrap);
+}
 
-    svg {
-      display: none;
-      //@media screen and (max-width: 660px) {
-      //  display: block;
-      //}
+.burgerMenu {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  @include flex(row, center, center, nowrap);
+
+  svg {
+    display: none;
+    @media screen and (max-width: 660px) {
+      display: block;
     }
   }
 }
+
 
