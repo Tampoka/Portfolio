@@ -50,15 +50,21 @@ const Contacts = () => {
                 setMessage('Some error occurred. Your message was not sent.')
             });
     };
+
+    const handleSubmit = (e) => {
+        if (!formik.email || !formik.message) {
+            setMessage('Please fill all reqiured fields')
+            return
+        }
+        formik.handleSubmit();
+        sendEmail(e)
+    }
     const messageClass = message === 'Some error occurred. Your message was not sent.' ? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
-                <form className={s.form} onSubmit={(e) => {
-                    formik.handleSubmit();
-                    sendEmail(e)
-                }} ref={form}>
+                <form className={s.form} onSubmit={handleSubmit} ref={form}>
                     <input className={s.input}
                            type="text"
                            name="name"
