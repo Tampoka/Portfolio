@@ -2,14 +2,14 @@ import React from 'react';
 import s from './Projects.module.scss';
 import Project from './Project/Project';
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
-import socialImg from '../assets/images/social.png'
+// import socialImg from '../assets/images/social.png'
 import todoImg from '../assets/images/todo.png'
 import cardsImg from '../assets/images/learning_cards.png'
 
 const Projects = () => {
-    const social = {
-        backgroundImage: `url(${socialImg})`
-    }
+    // const social = {
+    //     backgroundImage: `url(${socialImg})`
+    // }
 
     const todo = {
         backgroundImage: `url(${todoImg})`
@@ -30,9 +30,9 @@ const Projects = () => {
                              codeLink="https://github.com/Tampoka/Todo"/>
                     <Project projectTitle="Learning cards"
                              projectDescription="Application for studying things throw learning cards. Auth flow implemented.(sign up, sign in, forgot password etc.)"
-                             style={cards} linkTo='https://tampoka.github.io/react-cards/#/profile'
+                             style={cards} linkTo='https://tampoka.github.io/React_cards/'
                              stack="React, Redux, formik, axios, scss."
-                             codeLink='https://github.com/Tampoka/react-cards'/>
+                             codeLink='https://github.com/Tampoka/React_cards'/>
                     {/*<Project projectTitle="Social network"*/}
                     {/*         projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."*/}
                     {/*         style={social} linkTo="https://tampoka.github.io/my_social_network/"*/}
