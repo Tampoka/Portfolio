@@ -26,12 +26,12 @@ const Projects = () => {
                     <Project projectTitle="Todo list"
                              projectDescription="Classic todo application with auth flow implemented. Features adding, updating, sorting todos."
                              style={todo} linkTo="https://tampoka.github.io/Todo/"
-                             stack="React, Redux, redux toolkit, formik, axios, Material UI."
+                             stack="React, Redux, Redux Toolkit, Formik, Axios, Material UI."
                              codeLink="https://github.com/Tampoka/Todo"/>
                     <Project projectTitle="Learning cards"
                              projectDescription="Application for studying things throw learning cards. Auth flow implemented.(sign up, sign in, forgot password etc.)"
                              style={cards} linkTo='https://tampoka.github.io/React_cards/'
-                             stack="React, Redux, formik, axios, scss."
+                             stack="React, Redux, Formik, Axios, SCSS."
                              codeLink='https://github.com/Tampoka/React_cards'/>
                     {/*<Project projectTitle="Social network"*/}
                     {/*         projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."*/}
