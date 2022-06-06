@@ -9,4 +9,4 @@ const BlockTitle = (props) => {
     );
 };
 
-export default BlockTitle;
+export default BlockTitle
