@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.71816c72.chunk.css",
-    "main.js": "/Portfolio/static/js/main.7f262330.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.7f262330.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.0ed114ce.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0ed114ce.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.9032cbee.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.9032cbee.js.map",
     "static/js/2.f6c76040.chunk.js": "/Portfolio/static/js/2.f6c76040.chunk.js",
@@ -14,8 +14,8 @@
     "static/js/2.f6c76040.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f6c76040.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/Portfolio/static/media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.82aef47d.jpg",
     "static/media/learning_cards.4a4a26f6.png": "/Portfolio/static/media/learning_cards.4a4a26f6.png",
+    "static/media/redux_paint.601e7e01.png": "/Portfolio/static/media/redux_paint.601e7e01.png",
     "static/media/restApi.7bbb3a4b.svg": "/Portfolio/static/media/restApi.7bbb3a4b.svg",
-    "static/media/social.de3d5631.png": "/Portfolio/static/media/social.de3d5631.png",
     "static/media/storybook.c5da0e8c.svg": "/Portfolio/static/media/storybook.c5da0e8c.svg",
     "static/media/todo.2008d758.png": "/Portfolio/static/media/todo.2008d758.png"
   },
@@ -23,6 +23,6 @@
     "static/js/runtime-main.9032cbee.js",
     "static/js/2.f6c76040.chunk.js",
     "static/css/main.71816c72.chunk.css",
-    "static/js/main.7f262330.chunk.js"
+    "static/js/main.0ed114ce.chunk.js"
   ]
 }
