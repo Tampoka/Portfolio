@@ -31,12 +31,12 @@ const Projects = () => {
                     <Project projectTitle="Todo list"
                              projectDescription="Classic todo application with auth flow implemented. Features adding, updating, sorting todos."
                              style={todo} linkTo="https://tampoka.github.io/Todo/"
-                             stack="React, Redux, Redux Toolkit, Formik, Axios, Material UI."
+                             stack="React, Typescript, Redux, Redux thunk, Redux Toolkit, Formik, Axios, Material UI, Storybook, Jest."
                              codeLink="https://github.com/Tampoka/Todo"/>
                     <Project projectTitle="Learning cards"
                              projectDescription="Application for studying things throw learning cards. Auth flow implemented.(sign up, sign in, forgot password etc.)"
                              style={cards} linkTo='https://tampoka.github.io/React_cards/'
-                             stack="React, Redux, Formik, Axios, SCSS."
+                             stack="React, Typescript, Redux, Formik, Axios, SCSS."
                              codeLink='https://github.com/Tampoka/React_cards'/>
                     {/*<Project projectTitle="Social network"*/}
                     {/*         projectDescription="My  first React project, still in progress.While learning new technologies, updating every month."*/}
@@ -46,7 +46,7 @@ const Projects = () => {
                     <Project projectTitle="Paint"
                              projectDescription="Canvas board. Features saving, loading, exporting drawings."
                              style={paint} linkTo="https://tampoka.github.io/redux-paint"
-                             stack="React,  Redux Toolkit, Canvas, xp.css."
+                             stack="React, Typescript, Redux Toolkit, Canvas, xp.css."
                              codeLink="https://github.com/Tampoka/redux-paint"/>
                     <Project projectTitle="Coming soon"
                              projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing."
