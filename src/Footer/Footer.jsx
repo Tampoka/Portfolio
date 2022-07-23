@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </Rotate>
                 <p className={s.copy}>
-                    Copyright &copy; 2021 Tampoka. All rights reserved.
+                    Copyright &copy; 2022 Tampoka. All rights reserved.
                 </p>
             </div>
         </div>
