@@ -27,6 +27,10 @@ const validate = values => {
 
 const Contacts = () => {
     const [message, setMessage] = useState('')
+
+    const sucessMessage='Your message was sent successfully!'
+    const failMessage='Some error occurred. Your message was not sent.'
+
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -45,21 +49,16 @@ const Contacts = () => {
         e.preventDefault();
         emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
             .then((result) => {
-                setMessage('Your message was sent successfully!')
+                setMessage(sucessMessage)
             }, (error) => {
-                setMessage('Some error occurred. Your message was not sent.')
+                setMessage(failMessage)
             });
     };
-
     const handleSubmit = (e) => {
-        if (!formik.email || !formik.message) {
-            setMessage('Please fill all reqiured fields')
-            return
-        }
         formik.handleSubmit();
         sendEmail(e)
     }
-    const messageClass = message === 'Some error occurred. Your message was not sent.' ? s.msgError : s.message
+    const messageClass = message === sucessMessage? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
