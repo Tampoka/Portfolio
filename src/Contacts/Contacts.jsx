@@ -58,7 +58,7 @@ const Contacts = () => {
         formik.handleSubmit();
         sendEmail(e)
     }
-    const messageClass = message === sucessMessage? s.msgError : s.message
+    const messageClass = message === failMessage? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
