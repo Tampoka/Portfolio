@@ -2,10 +2,8 @@ import React, {useRef, useState} from 'react';
 import s from './Contacts.module.scss'
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
 import {useFormik} from 'formik';
-import emailjs from '@emailjs/browser';
-import {init} from '@emailjs/browser';
+import axios from 'axios';
 
-init("user_rqmTsb2vCqUC06uaLWlbW");
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
@@ -41,21 +39,18 @@ const Contacts = () => {
 
     const form = useRef()
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
-            .then((result) => {
-                setMessage('Your message was sent successfully!')
-            }, (error) => {
-                setMessage('Some error occurred. Your message was not sent.')
-            });
-    };
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
+    //         .then((result) => {
+    //             setMessage('Your message was sent successfully!')
+    //         }, (error) => {
+    //             setMessage('Some error occurred. Your message was not sent.')
+    //         });
+    // };
 
-    const handleSubmit = (e) => {
-        if (!formik.email || !formik.message) {
-            setMessage('Please fill all reqiured fields')
-            return
-        }
+    const handleSubmit = async(e) => {
+        await axios.post()
         formik.handleSubmit();
         sendEmail(e)
     }
