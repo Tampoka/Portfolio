@@ -40,10 +40,17 @@ const Contacts = () => {
         }
     })
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try{
+        await axios.post("https://zombi-mail.herokuapp.com/api/mail/send",{name:formik.values.name,contacts:formik.values.email,message:formik.values.message})
+            setMessage(sucessMessage)
+        } catch (err) {
+            setMessage(failMessage)
+        }
         formik.handleSubmit();
-        sendEmail(e)
     }
+
     const messageClass = message === failMessage? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
@@ -78,7 +85,7 @@ const Contacts = () => {
                         ? (<span className={s.error}>{formik.errors.message}</span>)
                         : null}
                     <button type="submit" className={s.submitBtn} disabled={!formik.isValid}>Send message</button>
-                    <div className={messageClass}>{message}</div>
+                    {!formik.dirty&&<div className={messageClass}>{message}</div>}
                 </form>
             </div>
         </div>
