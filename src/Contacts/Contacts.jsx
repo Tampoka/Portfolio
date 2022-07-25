@@ -1,14 +1,10 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import s from './Contacts.module.scss'
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
 import {useFormik} from 'formik';
-import emailjs from '@emailjs/browser';
-import {init} from '@emailjs/browser';
 
-init("user_rqmTsb2vCqUC06uaLWlbW");
-
-// A custom validation function. This must return an object
-// which keys are symmetrical to our values/initialValues
+/*A custom validation function. This must return an object
+  which keys are symmetrical to our values/initialValues*/
 const validate = values => {
     const errors = {};
 
@@ -43,17 +39,6 @@ const Contacts = () => {
         }
     })
 
-    const form = useRef()
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
-            .then((result) => {
-                setMessage(sucessMessage)
-            }, (error) => {
-                setMessage(failMessage)
-            });
-    };
     const handleSubmit = (e) => {
         formik.handleSubmit();
         sendEmail(e)
@@ -63,7 +48,7 @@ const Contacts = () => {
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
-                <form className={s.form} onSubmit={handleSubmit} ref={form}>
+                <form className={s.form} onSubmit={handleSubmit}>
                     <input className={s.input}
                            type="text"
                            name="name"
