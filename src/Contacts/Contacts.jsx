@@ -1,12 +1,12 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import s from './Contacts.module.scss'
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
 import {useFormik} from 'formik';
 import axios from 'axios';
 
 
-// A custom validation function. This must return an object
-// which keys are symmetrical to our values/initialValues
+/*A custom validation function. This must return an object
+  which keys are symmetrical to our values/initialValues*/
 const validate = values => {
     const errors = {};
 
@@ -35,31 +35,20 @@ const Contacts = () => {
         onSubmit: values => {
             formik.resetForm()
         }
-    })
+    });
 
-    const form = useRef()
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
-    //         .then((result) => {
-    //             setMessage('Your message was sent successfully!')
-    //         }, (error) => {
-    //             setMessage('Some error occurred. Your message was not sent.')
-    //         });
-    // };
 
     const handleSubmit = async(e) => {
-        await axios.post()
+        await axios.post("https://zombi-mail.herokuapp.com/api/mail/send",{name:formik.values.name,contacts:formik.values.email,message:formik.values.message})
         formik.handleSubmit();
-        sendEmail(e)
     }
     const messageClass = message === 'Some error occurred. Your message was not sent.' ? s.msgError : s.message
+    console.log(formik.values)
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
-                <form className={s.form} onSubmit={handleSubmit} ref={form}>
+                <form className={s.form} onSubmit={handleSubmit} >
                     <input className={s.input}
                            type="text"
                            name="name"
