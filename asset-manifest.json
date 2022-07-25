@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.71816c72.chunk.css",
-    "main.js": "/Portfolio/static/js/main.bd77b97d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.bd77b97d.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.9032cbee.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.9032cbee.js.map",
-    "static/js/2.f6c76040.chunk.js": "/Portfolio/static/js/2.f6c76040.chunk.js",
-    "static/js/2.f6c76040.chunk.js.map": "/Portfolio/static/js/2.f6c76040.chunk.js.map",
-    "static/js/3.232d73b9.chunk.js": "/Portfolio/static/js/3.232d73b9.chunk.js",
-    "static/js/3.232d73b9.chunk.js.map": "/Portfolio/static/js/3.232d73b9.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ebcbff8b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ebcbff8b.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.70ea3147.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.70ea3147.js.map",
+    "static/js/2.9a5b8722.chunk.js": "/Portfolio/static/js/2.9a5b8722.chunk.js",
+    "static/js/2.9a5b8722.chunk.js.map": "/Portfolio/static/js/2.9a5b8722.chunk.js.map",
+    "static/js/3.4b1a751f.chunk.js": "/Portfolio/static/js/3.4b1a751f.chunk.js",
+    "static/js/3.4b1a751f.chunk.js.map": "/Portfolio/static/js/3.4b1a751f.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/main.71816c72.chunk.css.map": "/Portfolio/static/css/main.71816c72.chunk.css.map",
-    "static/js/2.f6c76040.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f6c76040.chunk.js.LICENSE.txt",
+    "static/js/2.9a5b8722.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.9a5b8722.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/Portfolio/static/media/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.82aef47d.jpg",
     "static/media/learning_cards.4a4a26f6.png": "/Portfolio/static/media/learning_cards.4a4a26f6.png",
     "static/media/redux_paint.601e7e01.png": "/Portfolio/static/media/redux_paint.601e7e01.png",
@@ -20,9 +20,9 @@
     "static/media/todo.2008d758.png": "/Portfolio/static/media/todo.2008d758.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9032cbee.js",
-    "static/js/2.f6c76040.chunk.js",
+    "static/js/runtime-main.70ea3147.js",
+    "static/js/2.9a5b8722.chunk.js",
     "static/css/main.71816c72.chunk.css",
-    "static/js/main.bd77b97d.chunk.js"
+    "static/js/main.ebcbff8b.chunk.js"
   ]
 }
