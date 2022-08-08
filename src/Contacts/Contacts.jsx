@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import s from './Contacts.module.scss'
 import BlockTitle from '../common/components/blockTitle/BlockTitle';
 import {useFormik} from 'formik';
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
+import {init} from '@emailjs/browser';
 
+init("user_rqmTsb2vCqUC06uaLWlbW");
 /*A custom validation function. This must return an object
   which keys are symmetrical to our values/initialValues*/
 const validate = values => {
@@ -25,8 +27,8 @@ const validate = values => {
 const Contacts = () => {
     const [message, setMessage] = useState('')
 
-    const sucessMessage='Your message was sent successfully!'
-    const failMessage='Some error occurred. Your message was not sent.'
+    const successMessage = 'Your message was sent successfully!'
+    const failMessage = 'Some error occurred. Your message was not sent.'
 
     const formik = useFormik({
         initialValues: {
@@ -39,24 +41,28 @@ const Contacts = () => {
             formik.resetForm()
         }
     })
+    const form = useRef()
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        try{
-        await axios.post("https://zombi-mail.herokuapp.com/api/mail/send",{name:formik.values.name,contacts:formik.values.email,message:formik.values.message})
-            setMessage(sucessMessage)
-        } catch (err) {
-            setMessage(failMessage)
-        }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_bwhxm2y', 'contact_form', form.current, 'user_rqmTsb2vCqUC06uaLWlbW')
+            .then((result) => {
+                setMessage(successMessage)
+            }, (error) => {
+                setMessage(failMessage)
+            });
+    };
+    const handleSubmit = (e) => {
         formik.handleSubmit();
+        sendEmail(e)
     }
 
-    const messageClass = message === failMessage? s.msgError : s.message
+    const messageClass = message === failMessage ? s.msgError : s.message
     return (
         <div className={s.contacts} id="contacts">
             <div className={s.container}>
                 <BlockTitle title="Contacts"/>
-                <form className={s.form} onSubmit={handleSubmit}>
+                <form className={s.form} onSubmit={handleSubmit} ref={form}>
                     <input className={s.input}
                            type="text"
                            name="name"
@@ -84,8 +90,10 @@ const Contacts = () => {
                     {formik.touched.message && formik.errors.message
                         ? (<span className={s.error}>{formik.errors.message}</span>)
                         : null}
-                    <button type="submit" className={s.submitBtn} disabled={!formik.isValid}>Send message</button>
-                    {!formik.dirty&&<div className={messageClass}>{message}</div>}
+                    <button type="submit" className={s.submitBtn}
+                            disabled={!formik.isValid}>Send message
+                    </button>
+                    {!formik.dirty && <div className={messageClass}>{message}</div>}
                 </form>
             </div>
         </div>
